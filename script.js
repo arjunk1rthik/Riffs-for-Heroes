@@ -99,5 +99,25 @@ document.addEventListener('DOMContentLoaded', () => {
       lastY = y;
     }, { passive: true });
   }
+  // Hero video sound toggle
+  const heroVideo = document.getElementById('heroVideo');
+  const volumeToggle = document.getElementById('volumeToggle');
 
+  if (heroVideo && volumeToggle) {
+
+    volumeToggle.addEventListener('click', () => {
+
+      heroVideo.muted = !heroVideo.muted;
+
+      if (heroVideo.muted) {
+        volumeToggle.textContent = '🔇';
+      } else {
+        heroVideo.volume = 1;
+        heroVideo.play(); // keeps playback going
+        volumeToggle.textContent = '🔊';
+      }
+
+    });
+
+  }
 });
