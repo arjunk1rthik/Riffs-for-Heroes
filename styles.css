@@ -586,12 +586,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   align-items: start;
 }
 
-.event-flyer iframe {
+.event-flyer img {
   width: 100%;
-  height: 560px;
-  border: none;
+  height: auto;
   border-radius: 12px;
-  background: white;
+  display: block;
 }
 
 .event-feature h3 {
