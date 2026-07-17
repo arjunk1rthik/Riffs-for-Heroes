@@ -575,3 +575,40 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .volume-btn:active{
   transform:scale(.95);
 }
+.event-feature {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 40px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 40px;
+  border-radius: 18px;
+  align-items: start;
+}
+
+.event-flyer iframe {
+  width: 100%;
+  height: 560px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+}
+
+.event-feature h3 {
+  font-size: 1.8rem;
+}
+
+.event-feature ul {
+  padding-left: 20px;
+}
+
+
+@media(max-width:900px) {
+  .event-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .event-flyer iframe {
+    height: 500px;
+  }
+}
