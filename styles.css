@@ -640,3 +640,35 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
      height: auto;
      min-height: 400px; /* adjust as needed */
    }
+.event-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.event-feature-content {
+  /* already exists */
+}
+
+.event-flyer {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.event-flyer img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}.event-flyer {
+  max-width: 400px;
+  height: auto;
+}@media (max-width: 768px) {
+  .event-feature {
+    grid-template-columns: 1fr; /* stacks on mobile */
+    gap: 24px;
+  }
+}
