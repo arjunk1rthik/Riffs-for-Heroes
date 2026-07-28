@@ -39,32 +39,140 @@
 <section class="bg-black">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Featured Performance</div>
-      <h2>Live playing the national anthem</h2>
+      <div class="eyebrow">Videos by category</div>
+      <h2>Performances & Tribute Sets</h2>
     </div>
-    <div class="hero-media reveal" style="aspect-ratio:16/9; max-width:900px; margin:0 auto;">
-      <!--
-        VIDEO NOTE: once images/hero-performance.mp4 is uploaded, replace the
-        placeholder div below with:
-        <video autoplay muted loop playsinline controls poster="ChatGPT%20Image%20Jul%206%2C%202026%2C%2004_48_22%20PM.png">
-          <source src="images/hero-performance.mp4" type="video/mp4">
-        </video>
-      -->
-      <div class="hero-media reveal" style="aspect-ratio:16/9; max-width:900px; margin:0 auto;">
-  <video 
-    controls 
-    playsinline 
-    preload="metadata"
-    style="width:100%; height:100%; object-fit:cover; border-radius:20px;">
-    <source src="nationalanthem.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
-  <div class="media-caption">
-    <span>Riffs for Heroes</span>
-  </div>
-</div>
-      <div class="media-caption"><span>Riffs for Heroes</span></div>
+    <!-- Tab Navigation -->
+    <div class="video-tabs" style="display: flex; gap: 8px; margin: 2rem 0; border-bottom: 0.5px solid rgba(255,255,255,0.1); padding-bottom: 1rem;">
+      <button 
+        class="tab-btn active" 
+        data-tab="vvsd"
+        style="padding: 12px 20px; background: none; border: none; color: #fff; font-size: 14px; font-weight: 500; cursor: pointer; border-bottom: 2px solid #fff; position: relative; bottom: -1rem; font-family: inherit;">
+        VVSD (5 videos)
+      </button>
+      <button 
+        class="tab-btn" 
+        data-tab="ozzy"
+        style="padding: 12px 20px; background: none; border: none; color: rgba(255,255,255,0.5); font-size: 14px; font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; transition: color 0.2s; position: relative; bottom: -1rem; font-family: inherit;">
+        Ozzy Tribute (6 videos)
+      </button>
+    </div>
+
+    <!-- VVSD Grid -->
+    <div class="video-grid" id="vvsd-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 2rem 0;">
+      <!-- Star Spangled Banner -->
+      <a href="https://www.youtube.com/watch?v=DhtMgz9rFP0" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border-radius: 8px; overflow: hidden; aspect-ratio: 16/9; display: block; background: rgba(255,255,255,0.05); border: 0.5px solid rgba(255,255,255,0.1); transition: all 0.2s; cursor: pointer;">
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); padding: 12px; color: #fff; font-size: 13px; font-weight: 500;">Star Spangled Banner</div>
+        </div>
+      </a>
+
+      <!-- Creeping Death -->
+      <a href="https://www.youtube.com/watch?v=BxAkp92gHjQ" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border-radius: 8px; overflow: hidden; aspect-ratio: 16/9; display: block; background: rgba(255,255,255,0.05); border: 0.5px solid rgba(255,255,255,0.1); transition: all 0.2s; cursor: pointer;">
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); padding: 12px; color: #fff; font-size: 13px; font-weight: 500;">Creeping Death</div>
+        </div>
+      </a>
+
+      <!-- Crazy Train -->
+      <a href="https://www.youtube.com/watch?v=5wUVzsj0TFk" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border-radius: 8px; overflow: hidden; aspect-ratio: 16/9; display: block; background: rgba(255,255,255,0.05); border: 0.5px solid rgba(255,255,255,0.1); transition: all 0.2s; cursor: pointer;">
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); padding: 12px; color: #fff; font-size: 13px; font-weight: 500;">Crazy Train</div>
+        </div>
+      </a>
+
+      <!-- Sweet Child o' Mine -->
+      <a href="https://www.youtube.com/watch?v=sGVl7L33kOc" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border-radius: 8px; overflow: hidden; aspect-ratio: 16/9; display: block; background: rgba(255,255,255,0.05); border: 0.5px solid rgba(255,255,255,0.1); transition: all 0.2s; cursor: pointer;">
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); padding: 12px; color: #fff; font-size: 13px; font-weight: 500;">Sweet Child o' Mine</div>
+        </div>
+      </a>
+
+      <!-- Wasted Years -->
+      <a href="https://www.youtube.com/watch?v=RkLyGs4sO4A" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border-radius: 8px; overflow: hidden; aspect-ratio: 16/9; display: block; background: rgba(255,255,255,0.05); border: 0.5px solid rgba(255,255,255,0.1); transition: all 0.2s; cursor: pointer;">
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); padding: 12px; color: #fff; font-size: 13px; font-weight: 500;">Wasted Years</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Ozzy Grid (hidden by default) -->
+    <div class="video-grid" id="ozzy-grid" style="display: none; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 2rem 0;">
+      <!-- Believer -->
+      <a href="https://www.youtube.com/watch?v=gXTeSNWx3SY" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border-radius: 8px; overflow: hidden; aspect-ratio: 16/9; display: block; background: rgba(255,255,255,0.05); border: 0.5px solid rgba(255,255,255,0.1); transition: all 0.2s; cursor: pointer;">
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); padding: 12px; color: #fff; font-size: 13px; font-weight: 500;">Believer</div>
+        </div>
+      </a>
+
+      <!-- Goodbye to Romance -->
+      <a href="https://www.youtube.com/watch?v=t69g0i4zEgg" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border-radius: 8px; overflow: hidden; aspect-ratio: 16/9; display: block; background: rgba(255,255,255,0.05); border: 0.5px solid rgba(255,255,255,0.1); transition: all 0.2s; cursor: pointer;">
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); padding: 12px; color: #fff; font-size: 13px; font-weight: 500;">Goodbye to Romance</div>
+        </div>
+      </a>
+
+      <!-- Mama I'm Coming Home -->
+      <a href="https://www.youtube.com/watch?v=ZQ7OpUd9sbw" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border-radius: 8px; overflow: hidden; aspect-ratio: 16/9; display: block; background: rgba(255,255,255,0.05); border: 0.5px solid rgba(255,255,255,0.1); transition: all 0.2s; cursor: pointer;">
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); padding: 12px; color: #fff; font-size: 13px; font-weight: 500;">Mama I'm Coming Home</div>
+        </div>
+      </a>
+
+      <!-- No More Tears -->
+      <a href="https://www.youtube.com/watch?v=B5FKW8T4fdM" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border-radius: 8px; overflow: hidden; aspect-ratio: 16/9; display: block; background: rgba(255,255,255,0.05); border: 0.5px solid rgba(255,255,255,0.1); transition: all 0.2s; cursor: pointer;">
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); padding: 12px; color: #fff; font-size: 13px; font-weight: 500;">No More Tears</div>
+        </div>
+      </a>
+
+      <!-- Behind the Wall of Sleep -->
+      <a href="https://www.youtube.com/watch?v=mI6ex1HNo0c" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border-radius: 8px; overflow: hidden; aspect-ratio: 16/9; display: block; background: rgba(255,255,255,0.05); border: 0.5px solid rgba(255,255,255,0.1); transition: all 0.2s; cursor: pointer;">
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); padding: 12px; color: #fff; font-size: 13px; font-weight: 500;">Behind the Wall of Sleep</div>
+        </div>
+      </a>
+
+      <!-- Crazy Train (Ozzy version) -->
+      <a href="https://www.youtube.com/watch?v=oJZ17IrPMJw" target="_blank" rel="noopener noreferrer" style="text-decoration: none; border-radius: 8px; overflow: hidden; aspect-ratio: 16/9; display: block; background: rgba(255,255,255,0.05); border: 0.5px solid rgba(255,255,255,0.1); transition: all 0.2s; cursor: pointer;">
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); display: flex; align-items: center; justify-content: center; position: relative;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); padding: 12px; color: #fff; font-size: 13px; font-weight: 500;">Crazy Train (Ozzy)</div>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -112,6 +220,29 @@
     </div>
   </div>
 </footer>
+
+<script>
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const tab = this.dataset.tab;
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    
+    document.getElementById('vvsd-grid').style.display = tab === 'vvsd' ? 'grid' : 'none';
+    document.getElementById('ozzy-grid').style.display = tab === 'ozzy' ? 'grid' : 'none';
+    
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      if (b.dataset.tab === tab) {
+        b.style.color = '#fff';
+        b.style.borderBottomColor = '#fff';
+      } else {
+        b.style.color = 'rgba(255,255,255,0.5)';
+        b.style.borderBottomColor = 'transparent';
+      }
+    });
+  });
+});
+</script>
 
 <script src="script.js"></script>
 </body>
